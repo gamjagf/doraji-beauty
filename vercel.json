@@ -1,4 +1,5 @@
 {
+  "buildCommand": "npx vite build",
   "cleanUrls": true,
   "rewrites": [
     {
