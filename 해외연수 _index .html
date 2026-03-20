@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 사내 해외연수 안내</title>
+    <!-- Tailwind CSS (디자인을 예쁘게 만들어주는 마법의 도구예요!) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 깔끔한 한글 폰트를 가져옵니다 -->
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f3f4f6; /* 모바일 배경색처럼 부드러운 회색 */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <!-- 📱 모바일 카드 컨테이너 시작 -->
+    <div class="bg-white rounded-3xl shadow-xl w-full max-w-sm overflow-hidden transform transition duration-300 hover:shadow-2xl hover:-translate-y-1">
+        
+        <!-- ✈️ 상단 이미지 영역 -->
+        <div class="relative h-56 bg-blue-100">
+            <!-- 시원한 여행 느낌의 무료 이미지 URL을 넣었어요 -->
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop" alt="해외연수 비행기 풍경" class="w-full h-full object-cover">
+            <!-- 이미지 위에 살짝 어두운 막을 씌워서 글자가 잘 보이게 해요 -->
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent flex flex-col justify-end p-6">
+                <span class="text-blue-300 text-xs font-bold tracking-wider mb-1">Global Refresh Program</span>
+                <h2 class="text-white text-2xl font-extrabold leading-tight">2026 사내<br>해외연수 안내</h2>
+            </div>
+        </div>
+
+        <!-- 📝 본문 내용 영역 -->
+        <div class="p-6">
+            <p class="text-gray-500 text-sm mb-6 font-medium">사원 여러분의 복지증진과 재충전을 위해 특별한 해외연수를 진행합니다. 🌴</p>
+
+            <!-- 📌 상세 일정 리스트 -->
+            <div class="space-y-4 mb-8">
+                <!-- 기간 -->
+                <div class="flex items-center bg-gray-50 p-3.5 rounded-2xl border border-gray-100">
+                    <div class="bg-white p-2 rounded-xl shadow-sm mr-4">
+                        <span class="text-xl">🗓️</span>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500 font-semibold mb-0.5">연수 기간</p>
+                        <p class="text-sm font-bold text-gray-800">2026년 4월 ~ 6월</p>
+                    </div>
+                </div>
+                
+                <!-- 일정 -->
+                <div class="flex items-center bg-gray-50 p-3.5 rounded-2xl border border-gray-100">
+                    <div class="bg-white p-2 rounded-xl shadow-sm mr-4">
+                        <span class="text-xl">⏳</span>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500 font-semibold mb-0.5">연수 일정</p>
+                        <p class="text-sm font-bold text-gray-800">9박 10일</p>
+                    </div>
+                </div>
+
+                <!-- 경비 지원 (가장 중요하니까 눈에 띄게 파란색으로 포인트!) -->
+                <div class="flex items-center bg-blue-50 p-3.5 rounded-2xl border border-blue-100">
+                    <div class="bg-white p-2 rounded-xl shadow-sm mr-4">
+                        <span class="text-xl">💰</span>
+                    </div>
+                    <div>
+                        <p class="text-xs text-blue-600 font-semibold mb-0.5">경비 지원</p>
+                        <p class="text-base font-extrabold text-blue-700">1인당 1,000만원</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 👆 신청 버튼 (여기에 오빠님이 주신 진짜 링크를 넣었어요!) -->
+            <!-- target="_blank" 는 새 창에서 열리게 해주는 마법의 명령어예요 -->
+            <a href="https://forms.gle/vvCLmsY4fjwYP7Sk8" target="_blank" class="group flex items-center justify-center w-full bg-gray-900 hover:bg-black text-white text-center font-bold py-4 rounded-2xl transition duration-200 shadow-md">
+                신청서 바로가기
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transform group-hover:translate-x-1 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+
+            <!-- 📷 QR 코드 영역 추가 -->
+            <!-- 다른 사람들이 PC 화면을 볼 때 폰으로 찍기 편하게 만들었어요 -->
+            <div class="mt-6 pt-6 border-t border-gray-100 flex flex-col items-center">
+                <p class="text-xs text-gray-400 mb-3 font-medium text-center">모바일로 바로 접속하시려면<br>아래 QR코드를 스캔해주세요!</p>
+                <div class="p-2 bg-white rounded-xl shadow-sm border border-gray-100 hover:scale-105 transition transform duration-200">
+                    <!-- QR 코드를 자동으로 만들어주는 주소를 사용했어요. 맨 뒤에 오빠님의 링크가 들어있답니다! -->
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://forms.gle/vvCLmsY4fjwYP7Sk8" alt="신청서 QR코드" class="w-24 h-24">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 모바일 카드 컨테이너 끝 -->
+
+</body>
+</html>
